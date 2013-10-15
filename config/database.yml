@@ -50,3 +50,11 @@ test:
   pool: 5
   username: oren
   password:
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: digital_leash_production
+  pool: 5
+  username: digital_leash
+  password:
