@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  username: MyString
+  latitude: 1.5
+  longitude: 1.5
+  radius: 1.5
+  current_lat: 1.5
+  current_longitude: 1.5
+  is_in_zone: false
+
+two:
+  username: MyString
+  latitude: 1.5
+  longitude: 1.5
+  radius: 1.5
+  current_lat: 1.5
+  current_longitude: 1.5
+  is_in_zone: false

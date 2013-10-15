@@ -1,0 +1,39 @@
+<h1>Listing users</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Username</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th>Radius</th>
+      <th>Current lat</th>
+      <th>Current longitude</th>
+      <th>Is in zone</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.username %></td>
+        <td><%= user.latitude %></td>
+        <td><%= user.longitude %></td>
+        <td><%= user.radius %></td>
+        <td><%= user.current_lat %></td>
+        <td><%= user.current_longitude %></td>
+        <td><%= user.is_in_zone %></td>
+        <td><%= link_to 'Show', user %></td>
+        <td><%= link_to 'Edit', edit_user_path(user) %></td>
+        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New User', new_user_path %>
