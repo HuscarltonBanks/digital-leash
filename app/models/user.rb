@@ -8,6 +8,7 @@ class User < ActiveRecord::Base
     if longitude.present? && latitude.present? && current_lat.present? && current_longitude.present? && radius.present?
       if distance_from([current_lat,current_longitude]) <= radius
         self.is_in_zone = true
+//      if self.sendAlert = true
       else
         self.is_in_zone = false
       end
